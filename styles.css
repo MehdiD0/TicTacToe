@@ -4,19 +4,39 @@
   
   :root {
     --cell-size: 100px;
-    --mark-size: calc(var(--cell-size) * 0.8);
-    --border-color: #ddd;
-    --line-color: #333;
-    --x-color: #ff4d4d;
-    --circle-color: #4d94ff;
-    --bg-color: #f0f0f0;
-    --message-bg: rgba(0, 0, 0, 0.8);
+  --mark-size: calc(var(--cell-size) * 0.8);
+  --border-color: #ddd;
+  --line-color: #333;
+  --x-color: #ff4d4d;
+  --circle-color: #4d94ff;
+  --bg-color: #f0f0f0;
+  --message-bg: rgba(0, 0, 0, 0.8);
+  --header-bg: #333;
+  --header-color: #fff;
+  --header-font-size: 2rem;
   }
   
   body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: var(--bg-color);
+  }
+
+  header {
+    background-color: var(--header-bg);
+    color: var(--header-color);
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: var(--header-font-size);
   }
   
   .board {
